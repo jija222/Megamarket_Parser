@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;	
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="enterRef">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>525</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Введите ссылку с товарами</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="inputCategory">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>40</y>
+      <width>781</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit{
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startParsing">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>781</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255))</string>
+    </property>
+    <property name="text">
+     <string>Начать парсинг</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="outputInfo">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>213</y>
+      <width>781</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>100</horstretch>
+      <verstretch>100</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPlainTextEdit {
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="enterPages">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>72</y>
+      <width>771</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Введите количество страниц для парсинга</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="inputPages">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>781</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+	border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 178, 102, 255), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));
+	selection-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 178, 102, 255), stop:0.55 rgba(235, 148, 61, 255), stop:0.98 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 0));
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
